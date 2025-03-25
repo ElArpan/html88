@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpagina</title>
+    <style>
+        /* Estilo general para las filas */
+        .fila {
+            display: grid;
+            gap: 10px;
+        }
+
+        /* Fila 1: 10 columnas */
+        .fila1 {
+            grid-template-columns: repeat(10, 1fr); /* 10 columnas iguales */
+            width: 20%; /* La fila es 5 veces más angosta que las otras filas */
+        }
+
+        /* Fila 2: 2 columnas, una el doble de ancha que la otra */
+        .fila2 {
+            grid-template-columns: 2fr 1fr; /* La primera columna es el doble de ancha */
+            width: 100%;
+        }
+
+        /* Fila 3: 3 columnas del mismo tamaño */
+        .fila3 {
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+            width: 100%;
+        }
+
+        /* Estilo de las celdas para visualización */
+        .celda {
+            padding: 20px;
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background-color: black; padding: 20px;">
+        <h1 style="color: red; margin: 0;">Arpagina</h1>
+    </header>
+
+    <section id="inicio">
+        <h2>
+            MSN&nbsp;&nbsp;&nbsp;Descubrir&nbsp;&nbsp;&nbsp;Deportes&nbsp;&nbsp;&nbsp;Juegos&nbsp;&nbsp;&nbsp;Casuales&nbsp;&nbsp;&nbsp;Dinero&nbsp;&nbsp;&nbsp;Tiempo&nbsp;&nbsp;&nbsp;
+            Ver&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button style="font-size: 18px; padding: 8px 15px; background-color: #333; color: white; margin-left: 20px;">&#8230;</button>&nbsp;&nbsp;&nbsp;
+            <button style="font-size: 16px; padding: 6px 12px; background-color: #f0f0f0;">Diseño de fuente &#x1F4DD;</button>&nbsp;&nbsp;&nbsp;
+            <button style="font-size: 16px; padding: 6px 12px; background-color: #f0f0f0;">&#9733; Personalizar</button>
+        </h2>
+    </section>
+ 
+    <!-- Fila 1: 10 columnas -->
+    <div class="fila fila1">
+        <div class="celda">
+            <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+
+
+    <!-- Fila 2: 2 columnas (una el doble de ancha que la otra) -->
+    <div class="fila fila2">
+        <div class="celda">
+            <img src="imagen2.png" alt="Imagen 1" />
+        </div>
+
+    <!-- Fila 3: 3 columnas del mismo tamaño -->
+    <div class="fila fila3">
+        <div class="celda">Columna 1</div>
+        <div class="celda">Columna 2</div>
+        <div class="celda">Columna 3</div>
+    </div>
+
+</body>
+</html>
